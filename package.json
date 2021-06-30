@@ -1,0 +1,26 @@
+{
+  "name": "summoners-war-helper",
+  "version": "1.0.0",
+  "description": "Summoners War API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keryubi/Summoners-War-Helper.git"
+  },
+  "author": "Keryann Dubocq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Keryubi/Summoners-War-Helper/issues"
+  },
+  "homepage": "https://github.com/Keryubi/Summoners-War-Helper#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.0"
+  },
+  "type": "module"
+}
