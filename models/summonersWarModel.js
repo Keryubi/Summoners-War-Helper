@@ -33,22 +33,24 @@ const summonersWarSchemaRune = new mongoose.Schema({
         })
     },
     subStat: {
-        star: {
-            type: Number,
-            min: 1,
-            max: 6,
-            required: true,
-            unique: true
-        },
-        name: {
-            type: String,
-            required: true,
-            uppercase: true
-        },
-        extremum: {
-            type: [Number],
-            unique: true,
-            required: true
-        }
+        type: new mongoose.Schema({
+            star: {
+                type: Number,
+                min: 1,
+                max: 6,
+                required: true,
+                unique: true
+            },
+            name: {
+                type: String,
+                required: true,
+                uppercase: true
+            },
+            extremum: {
+                type: [Number],
+                unique: true,
+                required: true
+            }
+        })
     }
 })
